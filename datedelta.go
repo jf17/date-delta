@@ -8,7 +8,7 @@ func GetMinute(d time.Time) int64 {
 	nowTime := t.Unix()
 	lastTime := d.Unix()
 
-	deltaMin := (nowTime - lastTime) / 60
+	deltaMin := (lastTime -nowTime) / 60
 
 	return deltaMin
 }
